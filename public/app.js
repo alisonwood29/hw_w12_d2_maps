@@ -28,8 +28,9 @@ const initialize = function () {
   });
 
   const takeMeToLAButton = document.getElementById('button-take-me-to-la');
-  takeMeToLAButton.addEventListener('click', mainMap.setCenter(LA).bind(mainMap));
-
+  takeMeToLAButton.addEventListener('click', function(){
+    mainMap.googleMap.setCenter(LA);
+  })
 
 
 
